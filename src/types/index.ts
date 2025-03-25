@@ -32,3 +32,19 @@ export interface WhatsAppApiConfig {
   businessAccountId: string;
   isConfigured: boolean;
 }
+
+// Database interfaces
+export interface DatabaseConfig {
+  host: string;
+  port: number;
+  username: string;
+  password: string;
+  database: string;
+  isConfigured: boolean;
+}
+
+export interface DatabaseStatus {
+  isConnected: boolean;
+  lastSync?: string;
+  error?: string;
+}
